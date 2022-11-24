@@ -21,3 +21,15 @@
 1014_extrausers_delgroup.patch
 1015_add_zsys_support.patch
 1016_extrausers_gpasswd.patch
+CVE-2013-4235-pre1.patch
+CVE-2013-4235-pre2.patch
+CVE-2013-4235-1.patch
+CVE-2013-4235-2.patch
+CVE-2013-4235-3.patch
+CVE-2013-4235-4.patch
+CVE-2013-4235-5.patch
+CVE-2013-4235-6.patch
+CVE-2013-4235-7.patch
+CVE-2013-4235-post1.patch
+CVE-2013-4235-post2.patch
+CVE-2013-4235-post3.patch

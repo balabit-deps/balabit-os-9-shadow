@@ -1,3 +1,28 @@
+shadow (1:4.8.1-2ubuntu2.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: race condition when copying and removing directory trees
+    - debian/patches/CVE-2013-4235-pre1.patch: add nofollow to opens.
+    - debian/patches/CVE-2013-4235-pre2.patch: prepare context for actual file
+      type (set_selinux_file_context).
+    - debian/patches/CVE-2013-4235-1.patch: avoid races in chown_tree().
+    - debian/patches/CVE-2013-4235-2.patch: avoid races in remove_tree().
+    - debian/patches/CVE-2013-4235-3.patch: require symlink support.
+    - debian/patches/CVE-2013-4235-4.patch: fail if regular file pre-exists in
+      copy_tree().
+    - debian/patches/CVE-2013-4235-5.patch: more robust file content copy in
+      copy_tree().
+    - debian/patches/CVE-2013-4235-6.patch: address minor compiler warnings.
+    - debian/patches/CVE-2013-4235-7.patch: avoid races in copy_tree().
+    - debian/patches/CVE-2013-4235-post1.patch: use fchmodat instead of chmod
+      (copy_tree).
+    - debian/patches/CVE-2013-4235-post2.patch: do not block on fifos
+      (copy_tree).
+    - debian/patches/CVE-2013-4235-post3.patch: carefully treat permissions
+      (copy_tree).
+    - CVE-2013-4235
+
+ -- Camila Camargo de Matos <camila.camargodematos@canonical.com>  Thu, 24 Nov 2022 09:05:18 -0300
+
 shadow (1:4.8.1-2ubuntu2) jammy; urgency=medium
 
   [ Michael Vogt ]
