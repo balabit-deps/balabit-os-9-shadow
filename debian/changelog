@@ -1,3 +1,12 @@
+shadow (1:4.8.1-2ubuntu2.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: unsanitized buffer leading to a password leak during
+    gpasswd new password operation
+    - debian/patches/CVE-2023-4641.patch: fix password leak in gpasswd.
+    - CVE-2023-4641
+
+ -- Camila Camargo de Matos <camila.camargodematos@canonical.com>  Tue, 06 Feb 2024 09:54:23 -0300
+
 shadow (1:4.8.1-2ubuntu2.1) jammy-security; urgency=medium
 
   * SECURITY UPDATE: race condition when copying and removing directory trees
